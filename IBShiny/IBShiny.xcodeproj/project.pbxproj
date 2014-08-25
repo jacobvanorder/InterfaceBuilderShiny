@@ -12,6 +12,11 @@
 		76B66E4A19AA97FB000E730B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B66E4819AA97FB000E730B /* Main.storyboard */; };
 		76B66E4C19AA97FB000E730B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76B66E4B19AA97FB000E730B /* Images.xcassets */; };
 		76B66E5819AA97FB000E730B /* IBShinyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B66E5719AA97FB000E730B /* IBShinyTests.swift */; };
+		76B66E6B19AA984C000E730B /* IBShinyUIElements.h in Headers */ = {isa = PBXBuildFile; fileRef = 76B66E6A19AA984C000E730B /* IBShinyUIElements.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76B66E7719AA984C000E730B /* IBShinyUIElementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B66E7619AA984C000E730B /* IBShinyUIElementsTests.swift */; };
+		76B66E7A19AA984C000E730B /* IBShinyUIElements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B66E6619AA984C000E730B /* IBShinyUIElements.framework */; };
+		76B66E7B19AA984C000E730B /* IBShinyUIElements.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 76B66E6619AA984C000E730B /* IBShinyUIElements.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		76B66E8619AA9870000E730B /* IBShinyRoundedRectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B66E8519AA9870000E730B /* IBShinyRoundedRectButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,7 +27,42 @@
 			remoteGlobalIDString = 76B66E3E19AA97FB000E730B;
 			remoteInfo = IBShiny;
 		};
+		76B66E7119AA984C000E730B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76B66E3719AA97FB000E730B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76B66E3E19AA97FB000E730B;
+			remoteInfo = IBShiny;
+		};
+		76B66E7819AA984C000E730B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76B66E3719AA97FB000E730B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76B66E6519AA984C000E730B;
+			remoteInfo = IBShinyUIElements;
+		};
+		76B66E7C19AA984C000E730B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76B66E3719AA97FB000E730B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76B66E6519AA984C000E730B;
+			remoteInfo = IBShinyUIElements;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		76B66E8119AA984C000E730B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				76B66E7B19AA984C000E730B /* IBShinyUIElements.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		76B66E3F19AA97FB000E730B /* IBShiny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBShiny.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +74,13 @@
 		76B66E5119AA97FB000E730B /* IBShinyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBShinyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B66E5619AA97FB000E730B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76B66E5719AA97FB000E730B /* IBShinyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBShinyTests.swift; sourceTree = "<group>"; };
+		76B66E6619AA984C000E730B /* IBShinyUIElements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBShinyUIElements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76B66E6919AA984C000E730B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76B66E6A19AA984C000E730B /* IBShinyUIElements.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBShinyUIElements.h; sourceTree = "<group>"; };
+		76B66E7019AA984C000E730B /* IBShinyUIElementsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBShinyUIElementsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76B66E7519AA984C000E730B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76B66E7619AA984C000E730B /* IBShinyUIElementsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBShinyUIElementsTests.swift; sourceTree = "<group>"; };
+		76B66E8519AA9870000E730B /* IBShinyRoundedRectButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBShinyRoundedRectButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,10 +88,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76B66E7A19AA984C000E730B /* IBShinyUIElements.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		76B66E4E19AA97FB000E730B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76B66E6219AA984C000E730B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76B66E6D19AA984C000E730B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,6 +121,8 @@
 			children = (
 				76B66E4119AA97FB000E730B /* IBShiny */,
 				76B66E5419AA97FB000E730B /* IBShinyTests */,
+				76B66E6719AA984C000E730B /* IBShinyUIElements */,
+				76B66E7319AA984C000E730B /* IBShinyUIElementsTests */,
 				76B66E4019AA97FB000E730B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +132,8 @@
 			children = (
 				76B66E3F19AA97FB000E730B /* IBShiny.app */,
 				76B66E5119AA97FB000E730B /* IBShinyTests.xctest */,
+				76B66E6619AA984C000E730B /* IBShinyUIElements.framework */,
+				76B66E7019AA984C000E730B /* IBShinyUIElementsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,7 +175,53 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		76B66E6719AA984C000E730B /* IBShinyUIElements */ = {
+			isa = PBXGroup;
+			children = (
+				76B66E6A19AA984C000E730B /* IBShinyUIElements.h */,
+				76B66E8519AA9870000E730B /* IBShinyRoundedRectButton.swift */,
+				76B66E6819AA984C000E730B /* Supporting Files */,
+			);
+			path = IBShinyUIElements;
+			sourceTree = "<group>";
+		};
+		76B66E6819AA984C000E730B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76B66E6919AA984C000E730B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76B66E7319AA984C000E730B /* IBShinyUIElementsTests */ = {
+			isa = PBXGroup;
+			children = (
+				76B66E7619AA984C000E730B /* IBShinyUIElementsTests.swift */,
+				76B66E7419AA984C000E730B /* Supporting Files */,
+			);
+			path = IBShinyUIElementsTests;
+			sourceTree = "<group>";
+		};
+		76B66E7419AA984C000E730B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76B66E7519AA984C000E730B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		76B66E6319AA984C000E730B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76B66E6B19AA984C000E730B /* IBShinyUIElements.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		76B66E3E19AA97FB000E730B /* IBShiny */ = {
@@ -119,10 +231,13 @@
 				76B66E3B19AA97FB000E730B /* Sources */,
 				76B66E3C19AA97FB000E730B /* Frameworks */,
 				76B66E3D19AA97FB000E730B /* Resources */,
+				76B66E8119AA984C000E730B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				76B66E7919AA984C000E730B /* PBXTargetDependency */,
+				76B66E7D19AA984C000E730B /* PBXTargetDependency */,
 			);
 			name = IBShiny;
 			productName = IBShiny;
@@ -147,6 +262,42 @@
 			productReference = 76B66E5119AA97FB000E730B /* IBShinyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		76B66E6519AA984C000E730B /* IBShinyUIElements */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76B66E7E19AA984C000E730B /* Build configuration list for PBXNativeTarget "IBShinyUIElements" */;
+			buildPhases = (
+				76B66E6119AA984C000E730B /* Sources */,
+				76B66E6219AA984C000E730B /* Frameworks */,
+				76B66E6319AA984C000E730B /* Headers */,
+				76B66E6419AA984C000E730B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IBShinyUIElements;
+			productName = IBShinyUIElements;
+			productReference = 76B66E6619AA984C000E730B /* IBShinyUIElements.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		76B66E6F19AA984C000E730B /* IBShinyUIElementsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76B66E8219AA984C000E730B /* Build configuration list for PBXNativeTarget "IBShinyUIElementsTests" */;
+			buildPhases = (
+				76B66E6C19AA984C000E730B /* Sources */,
+				76B66E6D19AA984C000E730B /* Frameworks */,
+				76B66E6E19AA984C000E730B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76B66E7219AA984C000E730B /* PBXTargetDependency */,
+			);
+			name = IBShinyUIElementsTests;
+			productName = IBShinyUIElementsTests;
+			productReference = 76B66E7019AA984C000E730B /* IBShinyUIElementsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -158,8 +309,17 @@
 				TargetAttributes = {
 					76B66E3E19AA97FB000E730B = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 8X4DYCSP4Z;
 					};
 					76B66E5019AA97FB000E730B = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 76B66E3E19AA97FB000E730B;
+					};
+					76B66E6519AA984C000E730B = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 8X4DYCSP4Z;
+					};
+					76B66E6F19AA984C000E730B = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = 76B66E3E19AA97FB000E730B;
 					};
@@ -180,6 +340,8 @@
 			targets = (
 				76B66E3E19AA97FB000E730B /* IBShiny */,
 				76B66E5019AA97FB000E730B /* IBShinyTests */,
+				76B66E6519AA984C000E730B /* IBShinyUIElements */,
+				76B66E6F19AA984C000E730B /* IBShinyUIElementsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -195,6 +357,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		76B66E4F19AA97FB000E730B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76B66E6419AA984C000E730B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76B66E6E19AA984C000E730B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -221,6 +397,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76B66E6119AA984C000E730B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76B66E8619AA9870000E730B /* IBShinyRoundedRectButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76B66E6C19AA984C000E730B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76B66E7719AA984C000E730B /* IBShinyUIElementsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -228,6 +420,21 @@
 			isa = PBXTargetDependency;
 			target = 76B66E3E19AA97FB000E730B /* IBShiny */;
 			targetProxy = 76B66E5219AA97FB000E730B /* PBXContainerItemProxy */;
+		};
+		76B66E7219AA984C000E730B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76B66E3E19AA97FB000E730B /* IBShiny */;
+			targetProxy = 76B66E7119AA984C000E730B /* PBXContainerItemProxy */;
+		};
+		76B66E7919AA984C000E730B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76B66E6519AA984C000E730B /* IBShinyUIElements */;
+			targetProxy = 76B66E7819AA984C000E730B /* PBXContainerItemProxy */;
+		};
+		76B66E7D19AA984C000E730B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76B66E6519AA984C000E730B /* IBShinyUIElements */;
+			targetProxy = 76B66E7C19AA984C000E730B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -325,6 +532,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = IBShiny/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -336,6 +544,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = IBShiny/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -376,6 +585,85 @@
 			};
 			name = Release;
 		};
+		76B66E7F19AA984C000E730B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IBShinyUIElements/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		76B66E8019AA984C000E730B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IBShinyUIElements/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		76B66E8319AA984C000E730B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IBShinyUIElementsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IBShiny.app/IBShiny";
+			};
+			name = Debug;
+		};
+		76B66E8419AA984C000E730B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IBShinyUIElementsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IBShiny.app/IBShiny";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -401,6 +689,22 @@
 			buildConfigurations = (
 				76B66E5F19AA97FB000E730B /* Debug */,
 				76B66E6019AA97FB000E730B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		76B66E7E19AA984C000E730B /* Build configuration list for PBXNativeTarget "IBShinyUIElements" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76B66E7F19AA984C000E730B /* Debug */,
+				76B66E8019AA984C000E730B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		76B66E8219AA984C000E730B /* Build configuration list for PBXNativeTarget "IBShinyUIElementsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76B66E8319AA984C000E730B /* Debug */,
+				76B66E8419AA984C000E730B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

@@ -8,6 +8,8 @@
 
 import UIKit
 
+import IBShinyUIElements
+
 class ViewController: UIViewController {
                             
     override func viewDidLoad() {
