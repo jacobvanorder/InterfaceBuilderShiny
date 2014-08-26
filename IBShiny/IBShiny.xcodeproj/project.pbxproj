@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		765D520919AC075500740C5B /* IBShinyRoundedRectTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D520819AC075500740C5B /* IBShinyRoundedRectTextField.swift */; };
+		765D520E19AC1C9C00740C5B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76B66E4B19AA97FB000E730B /* Images.xcassets */; };
 		76B66E4519AA97FB000E730B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B66E4419AA97FB000E730B /* AppDelegate.swift */; };
 		76B66E4719AA97FB000E730B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B66E4619AA97FB000E730B /* ViewController.swift */; };
 		76B66E4A19AA97FB000E730B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B66E4819AA97FB000E730B /* Main.storyboard */; };
@@ -65,6 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		765D520819AC075500740C5B /* IBShinyRoundedRectTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBShinyRoundedRectTextField.swift; sourceTree = "<group>"; };
 		76B66E3F19AA97FB000E730B /* IBShiny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBShiny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B66E4319AA97FB000E730B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76B66E4419AA97FB000E730B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				76B66E6A19AA984C000E730B /* IBShinyUIElements.h */,
+				765D520819AC075500740C5B /* IBShinyRoundedRectTextField.swift */,
 				76B66E8519AA9870000E730B /* IBShinyRoundedRectButton.swift */,
 				76B66E6819AA984C000E730B /* Supporting Files */,
 			);
@@ -367,6 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				765D520E19AC1C9C00740C5B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				765D520919AC075500740C5B /* IBShinyRoundedRectTextField.swift in Sources */,
 				76B66E8619AA9870000E730B /* IBShinyRoundedRectButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -683,6 +689,7 @@
 				76B66E5D19AA97FB000E730B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76B66E5E19AA97FB000E730B /* Build configuration list for PBXNativeTarget "IBShinyTests" */ = {
 			isa = XCConfigurationList;
@@ -691,6 +698,7 @@
 				76B66E6019AA97FB000E730B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76B66E7E19AA984C000E730B /* Build configuration list for PBXNativeTarget "IBShinyUIElements" */ = {
 			isa = XCConfigurationList;
@@ -699,6 +707,7 @@
 				76B66E8019AA984C000E730B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76B66E8219AA984C000E730B /* Build configuration list for PBXNativeTarget "IBShinyUIElementsTests" */ = {
 			isa = XCConfigurationList;
@@ -707,6 +716,7 @@
 				76B66E8419AA984C000E730B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

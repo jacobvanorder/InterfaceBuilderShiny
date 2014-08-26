@@ -11,11 +11,10 @@ import UIKit
 @IBDesignable public class IBShinyRoundedRectButton: UIButton {
     
     @IBInspectable public var buttonCornerRadius : CGFloat = 5.0
-    @IBInspectable public var topRectColor : UIColor = UIColor(red: 0.98, green: 0.81, blue: 0.36, alpha: 1)
-    @IBInspectable public var extrudeColor : UIColor = UIColor(red: 0.88, green: 0.56, blue: 0.21, alpha: 1)
+    @IBInspectable public var topRectColor : UIColor = UIColor(red: 0.75, green: 0.91, blue: 0.64, alpha: 1)
+    @IBInspectable public var extrudeColor : UIColor = UIColor(red: 0.49, green: 0.73, blue: 0.56, alpha: 1)
     @IBInspectable public var shadowColor : UIColor = UIColor(white: 0.0, alpha: 0.6)
-    @IBInspectable public var strokeWidth : CGFloat = 3
-    
+        
     override public var highlighted : Bool {
         didSet {
             self.titleEdgeInsets = UIEdgeInsetsMake(highlighted ? 3 : -8, 0, 0, 0);

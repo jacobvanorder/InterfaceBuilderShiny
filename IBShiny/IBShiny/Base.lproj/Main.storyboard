@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,24 +17,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msr-LC-11S" customClass="IBShinyRoundedRectButton" customModule="IBShinyUIElements">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msr-LC-11S" customClass="IBShinyRoundedRectButton" customModule="IBShinyUIElements">
                                 <rect key="frame" x="245" y="511" width="180" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="hid-MI-mIE"/>
+                                    <constraint firstAttribute="height" constant="69" id="thr-j1-xNx"/>
+                                </constraints>
                                 <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.54858576642335766" green="0.42390716432962472" blue="0.22668833922354636" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleColor" red="0.18431372549019609" green="0.62745098039215685" blue="0.53333333333333333" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="buttonCornerRadius">
                                         <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello world" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jnd-lJ-GJP" customClass="IBShinyRoundedRectTextField" customModule="IBShinyUIElements">
+                                <rect key="frame" x="21" y="448" width="558" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" placeholder="YES" id="GDr-le-43K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="glyphImageLeftPad">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="glyphImage" value="UserImage-01"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textLeftPad">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jnd-lJ-GJP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="6SX-xw-xLZ"/>
+                            <constraint firstItem="msr-LC-11S" firstAttribute="top" secondItem="jnd-lJ-GJP" secondAttribute="bottom" constant="13" id="QUs-Fg-4DN"/>
+                            <constraint firstAttribute="centerX" secondItem="msr-LC-11S" secondAttribute="centerX" constant="-35" id="icU-Co-7en"/>
+                            <constraint firstItem="jnd-lJ-GJP" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" constant="-5" id="pdZ-lB-eHl"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="msr-LC-11S" secondAttribute="bottom" constant="20" id="qDw-jw-F8E"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="UserImage-01" width="20" height="20"/>
+    </resources>
 </document>
