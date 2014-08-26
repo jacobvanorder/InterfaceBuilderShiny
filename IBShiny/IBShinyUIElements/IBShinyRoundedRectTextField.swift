@@ -29,7 +29,7 @@ public class IBShinyRoundedRectTextField: UITextField {
             self.drawRect(self.bounds)
         }
     }
-    @IBInspectable public var glyphImage : UIImage = UIImage()
+    @IBInspectable public var glyphImage : UIImage?
     @IBInspectable public var glyphImageLeftPad : CGFloat = 5.0;
     @IBInspectable public var textLeftPad : CGFloat = 5.0
     
@@ -48,7 +48,9 @@ public class IBShinyRoundedRectTextField: UITextField {
     func commonIBCode() {
         self.textColor = customTextColor
         glyphImageView.setTranslatesAutoresizingMaskIntoConstraints(false);
-        glyphImageView.image = glyphImage.imageWithRenderingMode(.AlwaysTemplate)
+        if let checkedImage = glyphImage {
+            glyphImageView.image = checkedImage.imageWithRenderingMode(.AlwaysTemplate)
+        }
         self.addSubview(glyphImageView)
         self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-(pad)-[glyph]", options:NSLayoutFormatOptions(0) , metrics: ["pad" : glyphImageLeftPad], views: ["glyph" : glyphImageView]))
         self.addConstraint(NSLayoutConstraint(item: glyphImageView, attribute: .CenterY, relatedBy: .Equal, toItem: self, attribute: .CenterY, multiplier: 1, constant: 0))
@@ -62,6 +64,10 @@ public class IBShinyRoundedRectTextField: UITextField {
     
     override public func textRectForBounds(bounds: CGRect) -> CGRect {
         return CGRectMake(glyphImageView.bounds.width + glyphImageLeftPad + textLeftPad, 0.0, bounds.width, bounds.height)
+    }
+    
+    override public func editingRectForBounds(bounds: CGRect) -> CGRect {
+        return self.textRectForBounds(bounds)
     }
     
     override public func drawRect(rect: CGRect) {

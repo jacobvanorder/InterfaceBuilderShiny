@@ -21,23 +21,22 @@ import UIKit
             setNeedsDisplay()
         }
     }
-    
+
     override public func drawRect(rect: CGRect) {
             //// Shadow Rect Drawing
-            let shadowRectPath = UIBezierPath(roundedRect: CGRectMake(frame.minX, frame.minY + 12, frame.width, frame.height - 12), cornerRadius: buttonCornerRadius)
+            let shadowRectPath = UIBezierPath(roundedRect: CGRectMake(rect.minX, rect.minY + 12, rect.width, rect.height - 12), cornerRadius: buttonCornerRadius)
             shadowColor.setFill()
             shadowRectPath.fill()
-            
-            
+        
             //// Extrude Rect Drawing
-            let extrudeRectPath = UIBezierPath(roundedRect: CGRectMake(frame.minX, frame.minY + 10, frame.width, frame.height - 12), cornerRadius: buttonCornerRadius)
+            let extrudeRectPath = UIBezierPath(roundedRect: CGRectMake(rect.minX, rect.minY + 10, rect.width, rect.height - 12), cornerRadius: buttonCornerRadius)
             extrudeColor.setFill()
             extrudeRectPath.fill()
             
             
-            let topYValue = (highlighted) ? frame.minY + 10 : frame.minY
+            let topYValue = (highlighted) ? rect.minY + 10 : rect.minY
             //// Top Rect Drawing
-            let topRectPath = UIBezierPath(roundedRect: CGRectMake(frame.minX, topYValue, frame.width, frame.height - 12), cornerRadius: buttonCornerRadius)
+            let topRectPath = UIBezierPath(roundedRect: CGRectMake(rect.minX, topYValue, rect.width, rect.height - 12), cornerRadius: buttonCornerRadius)
             topRectColor.setFill()
             topRectPath.fill()
     }

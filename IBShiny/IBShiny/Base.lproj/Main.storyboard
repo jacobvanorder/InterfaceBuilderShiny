@@ -17,8 +17,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello world" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jnd-lJ-GJP" customClass="IBShinyRoundedRectTextField" customModule="IBShinyUIElements">
+                                <rect key="frame" x="16" y="118" width="558" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" placeholder="YES" id="GDr-le-43K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="glyphImage" value="UserImage-01"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="glyphImageLeftPad">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="90" placeholderIntrinsicHeight="90" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BC-TX-qCz" customClass="IBShinyRoundButton">
+                                <rect key="frame" x="255" y="20" width="90" height="90"/>
+                                <state key="normal" image="UserImage-01">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msr-LC-11S" customClass="IBShinyRoundedRectButton" customModule="IBShinyUIElements">
-                                <rect key="frame" x="245" y="511" width="180" height="69"/>
+                                <rect key="frame" x="210" y="181" width="180" height="69"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="hid-MI-mIE"/>
                                     <constraint firstAttribute="height" constant="69" id="thr-j1-xNx"/>
@@ -29,44 +50,20 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="buttonCornerRadius">
-                                        <real key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeWidth">
-                                        <real key="value" value="0.0"/>
+                                        <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello world" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jnd-lJ-GJP" customClass="IBShinyRoundedRectTextField" customModule="IBShinyUIElements">
-                                <rect key="frame" x="21" y="448" width="558" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" placeholder="YES" id="GDr-le-43K"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="glyphImageLeftPad">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="glyphImage" value="UserImage-01"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="textLeftPad">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jnd-lJ-GJP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="6SX-xw-xLZ"/>
+                            <constraint firstItem="jnd-lJ-GJP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="6SX-xw-xLZ"/>
+                            <constraint firstAttribute="centerX" secondItem="7BC-TX-qCz" secondAttribute="centerX" id="C3k-TV-Z9x"/>
+                            <constraint firstAttribute="centerX" secondItem="msr-LC-11S" secondAttribute="centerX" id="DJl-8a-yNm"/>
                             <constraint firstItem="msr-LC-11S" firstAttribute="top" secondItem="jnd-lJ-GJP" secondAttribute="bottom" constant="13" id="QUs-Fg-4DN"/>
-                            <constraint firstAttribute="centerX" secondItem="msr-LC-11S" secondAttribute="centerX" constant="-35" id="icU-Co-7en"/>
-                            <constraint firstItem="jnd-lJ-GJP" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" constant="-5" id="pdZ-lB-eHl"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="msr-LC-11S" secondAttribute="bottom" constant="20" id="qDw-jw-F8E"/>
+                            <constraint firstItem="jnd-lJ-GJP" firstAttribute="top" secondItem="7BC-TX-qCz" secondAttribute="bottom" constant="8" id="XtN-5F-1H0"/>
+                            <constraint firstItem="7BC-TX-qCz" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="j9d-u3-sLU"/>
+                            <constraint firstItem="jnd-lJ-GJP" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" constant="-10" id="pdZ-lB-eHl"/>
                         </constraints>
                     </view>
                 </viewController>

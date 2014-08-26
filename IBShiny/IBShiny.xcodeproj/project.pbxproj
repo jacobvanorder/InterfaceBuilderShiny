@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		765D520919AC075500740C5B /* IBShinyRoundedRectTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D520819AC075500740C5B /* IBShinyRoundedRectTextField.swift */; };
 		765D520E19AC1C9C00740C5B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76B66E4B19AA97FB000E730B /* Images.xcassets */; };
+		765D521119ACBA0000740C5B /* IBShinyRoundButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 765D520F19ACBA0000740C5B /* IBShinyRoundButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		765D521219ACBA0000740C5B /* IBShinyRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 765D521019ACBA0000740C5B /* IBShinyRoundButton.m */; };
 		76B66E4519AA97FB000E730B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B66E4419AA97FB000E730B /* AppDelegate.swift */; };
 		76B66E4719AA97FB000E730B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B66E4619AA97FB000E730B /* ViewController.swift */; };
 		76B66E4A19AA97FB000E730B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B66E4819AA97FB000E730B /* Main.storyboard */; };
@@ -68,6 +70,8 @@
 
 /* Begin PBXFileReference section */
 		765D520819AC075500740C5B /* IBShinyRoundedRectTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBShinyRoundedRectTextField.swift; sourceTree = "<group>"; };
+		765D520F19ACBA0000740C5B /* IBShinyRoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBShinyRoundButton.h; sourceTree = "<group>"; };
+		765D521019ACBA0000740C5B /* IBShinyRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBShinyRoundButton.m; sourceTree = "<group>"; };
 		76B66E3F19AA97FB000E730B /* IBShiny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBShiny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B66E4319AA97FB000E730B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76B66E4419AA97FB000E730B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				76B66E6A19AA984C000E730B /* IBShinyUIElements.h */,
+				765D520F19ACBA0000740C5B /* IBShinyRoundButton.h */,
+				765D521019ACBA0000740C5B /* IBShinyRoundButton.m */,
 				765D520819AC075500740C5B /* IBShinyRoundedRectTextField.swift */,
 				76B66E8519AA9870000E730B /* IBShinyRoundedRectButton.swift */,
 				76B66E6819AA984C000E730B /* Supporting Files */,
@@ -221,6 +227,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				765D521119ACBA0000740C5B /* IBShinyRoundButton.h in Headers */,
 				76B66E6B19AA984C000E730B /* IBShinyUIElements.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				765D521219ACBA0000740C5B /* IBShinyRoundButton.m in Sources */,
 				765D520919AC075500740C5B /* IBShinyRoundedRectTextField.swift in Sources */,
 				76B66E8619AA9870000E730B /* IBShinyRoundedRectButton.swift in Sources */,
 			);
